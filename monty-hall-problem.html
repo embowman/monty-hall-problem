@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Monty Hall Problem</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="mhp.js"></script>
+    <div class="wrapper">
+        <ol id="doors">
+            <li><div class="door unselected goat unrevealed" onclick="Select(0)"></div></li>
+            <li><div class="door unselected goat unrevealed" onclick="Select(1)"></div></li>
+            <li><div class="door unselected goat unrevealed" onclick="Select(2)"></div></li>
+        </ol>
+    </div>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <td>&nbsp;</td>
+                <th>Stay</th>
+                <th>Switch</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <th>Player Chose</th>
+                <td id="aa">0 (0%)</td>
+                <td id="ab">0 (0%)</td>
+                <td id="ac">0</td>
+            </tr>
+            <tr>
+                <th>Winning Move</th>
+                <td id="ba">0 (0%)</td>
+                <td id="bb">0 (0%)</td>
+            </tr>
+            <tr>
+                <th>Player Won</th>
+                <td id="ca">0 (0%)</td>
+                <td id="cb">0 (0%)</td>
+                <td id="cc">0 (0%)</td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>
